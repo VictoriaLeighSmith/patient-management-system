@@ -6,6 +6,7 @@ public class Patient {
     private final int patientId;
     private String fullName;
     private String visitReason;
+    private final PatientHistory patientHistory;
 
     public Patient(String fullName, String visitReason) {
         patientIdCounter++;
@@ -13,6 +14,7 @@ public class Patient {
         this.patientId = patientIdCounter;
         this.fullName = fullName;
         this.visitReason = visitReason;
+        this.patientHistory = new PatientHistory();
     }
 
     public int getPatientId() {
