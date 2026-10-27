@@ -37,6 +37,10 @@ public class Patient {
         this.visitReason = visitReason;
     }
 
+    public PatientHistory getPatientHistory() {
+        return patientHistory;
+    }
+
     @Override
     public String toString() {
         return String.format("ID: %d | Name: %s | Reason for Visit: %s", patientId, fullName, visitReason);
