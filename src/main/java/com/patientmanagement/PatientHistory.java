@@ -66,4 +66,9 @@ public class PatientHistory {
             return current.patientRecord;
         }
     }
+
+    public PatientRecord resetToOldestRecord() {
+        current = head;
+        return current != null ? current.patientRecord : null;
+    }
 }
