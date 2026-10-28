@@ -28,7 +28,7 @@ public class PatientRecord {
 
     @Override
     public String toString() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
         return String.format("Visit Date: %s | Diagnosis: %s | Treatment Notes: %s", visitDate.format(formatter), diagnosis, treatmentNotes);
     }
